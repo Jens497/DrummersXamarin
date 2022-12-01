@@ -32,6 +32,9 @@
     <ShellItem Route="LoginPage">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
     </ShellItem>
+    <ShellItem Route="RegistrationPage">
+        <ShellContent ContentTemplate="{DataTemplate local:RegistrationPage}"/>
+    </ShellItem>
 
     <TabBar>
         <!--<ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />

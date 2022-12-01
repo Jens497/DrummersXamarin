@@ -16,7 +16,6 @@ namespace AppForTest.Services
             string url = "https://10.0.2.2:7212/api/User/GetUsersTest";
             HttpResponseMessage response;
             //Uri uri = new Uri()
-            //Get ready for JWT
             HttpClientHandler httpClientHandler = new HttpClientHandler();
             httpClientHandler.ServerCertificateCustomValidationCallback =
             (message, cert, chain, errors) => { return true; };

@@ -7,11 +7,11 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Username:"/>
-            <Entry Placeholder="Username"/>
+            <Entry Placeholder="Username" x:Name="EntryUsername"/>
             <Label Text="Password:"/>
-            <Entry IsPassword="True" Placeholder="Password"/>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="EntryPassword"/>
             <Button Text="Login" Clicked="Button_Clicked"/>
-            <Label Text="Register" HorizontalOptions="Center">
+            <Label Text="Sign up" HorizontalOptions="Center">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>
