@@ -1,4 +1,5 @@
-﻿using AppForTest.Models;
+﻿using AppForTest.FileHelpers;
+using AppForTest.Models;
 using AppForTest.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,12 @@ namespace AppForTest.Views
     public partial class ExcerciseLibrary : ContentPage
     {
         private readonly ExcerciseViewModel _viewModel;
+        private readonly FileOpener _opener;
         public ExcerciseLibrary()
         {
             InitializeComponent();
             _viewModel = new ExcerciseViewModel();
+            _opener = new FileOpener();
 
             ExcerciseList.RefreshCommand = new Command(() =>
             {
@@ -36,15 +39,18 @@ namespace AppForTest.Views
                 var excerciseConverted = new ObservableCollection<ExcerciseModel>(excercises);
                 
                 ExcerciseList.ItemsSource = excerciseConverted;
-            }
+          }
         }
 
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
             var excercise = e.Item as ExcerciseModel;
             Console.WriteLine(excercise.Id);
             //await _viewModel.DeleteExcercise(excercise.Id);
+            var fileOpeningStatus = await _opener.OpenFile(excercise.Filename);
+            if (!fileOpeningStatus)
+                await Application.Current.MainPage.DisplayAlert("File not found", "The file could not be found!", "OK");
         }
 
         private async void MenuItem_Clicked(object sender, EventArgs e)

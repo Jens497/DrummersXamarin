@@ -3,7 +3,8 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:AppForTest.Views"
        Title="AppForTest"
-       x:Class="AppForTest.AppShell">
+       x:Class="AppForTest.AppShell"
+       BackgroundColor="#021A35">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.

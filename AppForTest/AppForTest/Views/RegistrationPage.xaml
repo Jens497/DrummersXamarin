@@ -3,22 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.NavBarIsVisible="False"
              Shell.FlyoutItemIsVisible="False"
-             x:Class="AppForTest.Views.RegistrationPage">
+             x:Class="AppForTest.Views.RegistrationPage"
+             BackgroundColor="#021A35">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Username"/>
-            <Entry Placeholder="Username" x:Name="EUsername"/>
-            <Label Text="Password"/>
-            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword"/>
-            <Label Text="Reapet password"/>
-            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword"/>
-            <Label Text="Email"/>
-            <Entry Placeholder="Email" x:Name="EEmail"/>
-            <Label Text="First name"/>
-            <Entry Placeholder="First name" x:Name="EFirstname"/>
-            <Label Text="Last name"/>
-            <Entry Placeholder="Last name" x:Name="ELastname"/>
-            <Button Text="Register" Clicked="Register_Clicked" />
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="DrummerAppLogo.jpg" WidthRequest="200" HeightRequest="200"></Image>
+            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray"/>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray"/>
+            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword" PlaceholderColor="Gray"/>
+            <Entry Placeholder="Email" x:Name="EEmail" PlaceholderColor="Gray"/>
+            <Entry Placeholder="First name" x:Name="EFirstname" PlaceholderColor="Gray"/>
+            <Entry Placeholder="Last name" x:Name="ELastname" PlaceholderColor="Gray"/>
+            <Button 
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                BorderColor="ForestGreen"
+                Text="Register" 
+                Clicked="Register_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

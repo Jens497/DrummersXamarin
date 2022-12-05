@@ -43,7 +43,7 @@ namespace AppForTest.Views
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             //Since we are already in the login page, the path through it is not needed!
-            await Shell.Current.GoToAsync($"//{nameof(RegistrationPage)}");
+            await Shell.Current.GoToAsync($"{nameof(RegistrationPage)}");
         }
     }
 }

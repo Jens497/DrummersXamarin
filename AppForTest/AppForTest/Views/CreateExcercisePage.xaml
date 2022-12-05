@@ -1,17 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppForTest.Views.CreateExcercisePage">
+             x:Class="AppForTest.Views.CreateExcercisePage"
+             BackgroundColor="#021A35">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Excercise name:"/>
-            <Entry Placeholder="Excercise name" x:Name="EName"/>
-            <Label Text="File name:"/>
-            <Entry Placeholder="File name" x:Name="EFilename"/>
-            <Button Text="Create" Clicked="Button_Clicked"/>
-            <Button Text="Pick file" Clicked="Button_Clicked_1"/>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Entry Placeholder="Excercise name" x:Name="EName" PlaceholderColor="Gray" TextColor="Gray"/>
+            
+            <Button 
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                BorderColor="ForestGreen"
+                Text="Pick file" 
+                Clicked="Pick_file_clicked"/>
+            <Button 
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                BorderColor="ForestGreen"
+                Text="Create" 
+                Clicked="Create_Clicked"/>
             <Label FontSize="Large" x:Name="Labelinfo"/>
-            <Button Text="Open file" Clicked="Button_Clicked_2"/>
+            <!--<Button Text="Open file" Clicked="Button_Clicked_2"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

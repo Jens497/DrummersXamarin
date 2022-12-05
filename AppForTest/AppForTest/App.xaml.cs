@@ -11,7 +11,7 @@ namespace AppForTest
         public App()
         {
             InitializeComponent();
-
+            Device.SetFlags(new[] { "MediaElement_Experimental", "Brush_Experimental" });
             MainPage = new AppShell();
         }
 

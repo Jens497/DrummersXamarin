@@ -24,6 +24,25 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.CommunityToolkit/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -201,8 +220,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2515",
           "Xamarin.Forms.SaveOpenPDFPackage": "1.0.0"
         },
         "compile": {
@@ -236,6 +256,25 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.CommunityToolkit/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -413,8 +452,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2515",
           "Xamarin.Forms.SaveOpenPDFPackage": "1.0.0"
         },
         "compile": {
@@ -448,6 +488,25 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.CommunityToolkit/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -625,8 +684,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2515",
           "Xamarin.Forms.SaveOpenPDFPackage": "1.0.0"
         },
         "compile": {
@@ -660,6 +720,25 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "Xamarin.CommunityToolkit/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2291"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.CommunityToolkit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -837,8 +916,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xamarin.CommunityToolkit": "2.0.5",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Forms": "5.0.0.2515",
           "Xamarin.Forms.SaveOpenPDFPackage": "1.0.0"
         },
         "compile": {
@@ -923,6 +1003,47 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xamarin.CommunityToolkit/2.0.5": {
+      "sha512": "8oFY5ZrKoIOCqtTeRh+jx5TAcs177TU0pEoefMWRptrq+TZoKwsPNg7L8lBtLSP+2ymg4VBn8i/6chA6b4mGdQ==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "analyzers/dotnet/xct/cs/Xamarin.CommunityToolkit.SourceGenerator.dll",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.xml",
+        "lib/net471/Xamarin.CommunityToolkit.dll",
+        "lib/net471/Xamarin.CommunityToolkit.xml",
+        "lib/net472/Xamarin.CommunityToolkit.dll",
+        "lib/net472/Xamarin.CommunityToolkit.xml",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.xml",
+        "lib/tizen40/Xamarin.CommunityToolkit.dll",
+        "lib/tizen40/Xamarin.CommunityToolkit.xml",
+        "lib/uap10.0.18362/Xamarin.CommunityToolkit.dll",
+        "lib/uap10.0.18362/Xamarin.CommunityToolkit.pri",
+        "lib/uap10.0.18362/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.xml",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.xml",
+        "xamarin.communitytoolkit.2.0.5.nupkg.sha512",
+        "xamarin.communitytoolkit.nuspec"
       ]
     },
     "Xamarin.Essentials/1.7.0": {
@@ -1286,5 +1407,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2515 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n AppForTest.iOS -> AppForTest -> Xamarin.Forms (>= 5.0.0.2515) \r\n AppForTest.iOS -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

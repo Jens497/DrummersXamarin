@@ -4,7 +4,8 @@
              xmlns:viewmodels="clr-namespace:AppForTest.ViewModels"
              xmlns:model="clr-namespace:AppForTest.Models"
              x:Class="AppForTest.Views.ExcerciseLibrary"
-             x:DataType="viewmodels:ExcerciseViewModel">
+             x:DataType="viewmodels:ExcerciseViewModel"
+             BackgroundColor="#021A35">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Excercisese"
@@ -12,19 +13,20 @@
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
-    <!--<ContentView.BindingContext>
+    <ContentPage.BindingContext>
         <viewmodels:ExcerciseViewModel/>
-    </ContentView.BindingContext>-->
+    </ContentPage.BindingContext>
 
-      <ListView
+    <ListView
         ItemTapped="ListView_ItemTapped"
         CachingStrategy="RecycleElement"
         BackgroundColor="Transparent"
         HasUnevenRows="True"
-        SeparatorColor="Red"
+        SeparatorColor="Transparent"
         IsPullToRefreshEnabled="True"
         RefreshControlColor="AliceBlue"
         x:Name="ExcerciseList">
+
 
         <ListView.ItemTemplate>
             <DataTemplate x:DataType="model:ExcerciseModel">
@@ -44,12 +46,20 @@
         <ListView.Header>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Excercise library"
-                       TextColor="MediumVioletRed"/>
+                       TextColor="MediumVioletRed"
+                       FontSize="30"/>
             </StackLayout>
         </ListView.Header>
         <ListView.Footer>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Create excercise" Clicked="Create_Clicked"/>
+                <Button 
+                    VerticalOptions="Center"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="MediumVioletRed"
+                    Text="Create excercise" Clicked="Create_Clicked"/>
             </StackLayout>
         </ListView.Footer>
     </ListView>

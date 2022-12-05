@@ -1,13 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppForTest.Views.HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome Drummers heaven!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Test" Clicked="Button_Clicked"/>
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:viewmodels="clr-namespace:AppForTest.ViewModels"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="AppForTest.Views.HomePage"
+             BackgroundColor="#021A35">
+    <ContentPage.BindingContext>
+        <viewmodels:HomePageViewModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <xct:MediaElement x:Name="MusicVideo" Source="ms-appx:///HomePageVideo.mp4" ShowsPlaybackControls="False"
+                          IsLooping="True" Aspect="AspectFill" AutoPlay="True"
+                          HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                          />
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="Transparent" Offset="0"/>
+                    <GradientStop Color="#2E4159" Offset="0.9"/>
+                    <GradientStop Color="#2E4159" Offset="1"/>
+                </LinearGradientBrush>    
+            </BoxView.Background>
+        </BoxView>
+        <Grid RowDefinitions="Auto, Auto, Auto" HeightRequest="280" Margin="30,30,30,100"
+              RowSpacing="40" VerticalOptions="End">
+            <CarouselView x:Name="cvOnBoarding" IndicatorView="LandingIndicator"
+                          ItemsSource="{Binding OnBoardings}" VerticalOptions="End">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Spacing="10">
+                            <Label Text="{Binding Heading}" TextColor="White" FontSize="26" FontAttributes="Bold"
+                                   WidthRequest="221" HorizontalOptions="Start"/>
+                            <Label Text="{Binding Caption}" TextColor="White" FontSize="14" WidthRequest="251" HorizontalOptions="Start"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="LandingIndicator" Grid.Row="1" IndicatorsShape="Circle"
+                           IndicatorColor="#B8B8B8" SelectedIndicatorColor="#E7305E"/>
+        </Grid>
+    </Grid>
 </ContentPage>

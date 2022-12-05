@@ -3,15 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Shell.NavBarIsVisible="False"
              Shell.FlyoutItemIsVisible="False"
-             x:Class="AppForTest.Views.LoginPage">
+             x:Class="AppForTest.Views.LoginPage"
+             BackgroundColor="#021A35">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Username:"/>
-            <Entry Placeholder="Username" x:Name="EUsername"/>
-            <Label Text="Password:"/>
-            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword"/>
-            <Button Text="Login" Clicked="Button_Clicked"/>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="DrummerAppLogo.jpg" WidthRequest="180" HeightRequest="180"></Image>
+            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray" TextColor="Gray"/>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray" TextColor="Gray"/>
+            <Button 
+                VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                BorderColor="ForestGreen"
+                Text="Login" 
+                Clicked="Button_Clicked"/>
             <Label Text="Sign up" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account? " TextColor="Gray"/>
+                        <Span Text="Register" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Label.GestureRecognizers>
