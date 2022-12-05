@@ -1,5 +1,6 @@
 ﻿using AppForTest.Models;
 using AppForTest.Services;
+using AppForTest.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,17 +17,17 @@ namespace AppForTest.ViewModels
 
         public async Task RegisterUser(UserModel user)
         {
-            var register = await _loginServices.RegisterUserPost(user);
-            if (!register.IsFailed)
+            var userStatus = await _loginServices.RegisterUserPost(user);
+            if (!userStatus.IsFailed)
             {
-                await SecureStorage.SetAsync("accessToken", register.AccessToken);
-                Application.Current.Properties.Add("IsLoggedIn", true);
-                Application.Current.Properties.Add("username", register.UserName);
+                await SecureStorage.SetAsync("accessToken", userStatus.AccessToken);
+                //Application.Current.Properties.Add("username", register.UserName);
+                //Application.Current.Properties.Add("IsLoggedIn", true);
                 await Application.Current.SavePropertiesAsync();
-
+                await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
             }
             else
-                await Application.Current.MainPage.DisplayAlert("Registration error", register.ErrorMessage, "OK");
+                await Application.Current.MainPage.DisplayAlert("Registration error", userStatus.ErrorMessage, "OK");
         }
     }
 }

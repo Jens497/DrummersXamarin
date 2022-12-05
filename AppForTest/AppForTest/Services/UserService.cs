@@ -11,6 +11,7 @@ namespace AppForTest.Services
 {
     public class UserService
     {
+        //Maybe change this so that it handles the users libraries etc. ?
         public async Task<List<UserModel>> GetUserModelsAsync()
         {
             string url = "https://10.0.2.2:7212/api/User/GetUsersTest";

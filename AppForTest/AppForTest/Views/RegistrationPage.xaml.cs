@@ -23,6 +23,8 @@ namespace AppForTest.Views
 
         private async void Register_Clicked(object sender, EventArgs e)
         {
+            //TBD verify that email has a valid form
+            //Maybe also check length of username and password?
             if(EUsername.Text == "")
                 await Application.Current.MainPage.DisplayAlert("Registration error", "Username and password cannot be empty", "OK");
             else if(EPassword.Text != ERepeatPassword.Text)
@@ -40,10 +42,10 @@ namespace AppForTest.Views
                     Lastname = ELastname.Text,
                 };
                 await registrationViewModel.RegisterUser(user);
+                //The "//" creates a new route stack.
+                //await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
             }
             resetTextFields();
-
-            await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
         }
 
         private void resetTextFields()

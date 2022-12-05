@@ -35,12 +35,15 @@
     <ShellItem Route="RegistrationPage">
         <ShellContent ContentTemplate="{DataTemplate local:RegistrationPage}"/>
     </ShellItem>
+    <ShellItem Route="CreateExcercisePage">
+        <ShellContent ContentTemplate="{DataTemplate local:CreateExcercisePage}"/>
+    </ShellItem>
 
     <TabBar>
         <!--<ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
         <ShellContent Title="Home" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
-        <ShellContent Title="Player" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:PlayerPage}"/>
+        <ShellContent Title="Player" Icon="icon_feed.png" Route="ExcerciseLibrary" ContentTemplate="{DataTemplate local:ExcerciseLibrary}"/>
     </TabBar>
 
 </Shell>

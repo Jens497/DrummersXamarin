@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:AppForTest.ViewModels"
+             xmlns:model="clr-namespace:AppForTest.Models"
+             x:Class="AppForTest.Views.ExcerciseLibrary"
+             x:DataType="viewmodels:ExcerciseViewModel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Excercisese"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    <!--<ContentView.BindingContext>
+        <viewmodels:ExcerciseViewModel/>
+    </ContentView.BindingContext>-->
+
+      <ListView
+        ItemTapped="ListView_ItemTapped"
+        CachingStrategy="RecycleElement"
+        BackgroundColor="Transparent"
+        HasUnevenRows="True"
+        SeparatorColor="Red"
+        IsPullToRefreshEnabled="True"
+        RefreshControlColor="AliceBlue"
+        x:Name="ExcerciseList">
+
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:ExcerciseModel">
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Text="Delete" Clicked="MenuItem_Clicked"/>
+                    </ViewCell.ContextActions>
+                    <Grid Padding="5">
+                        <Label VerticalOptions="Center" 
+                               FontSize="Large"
+                               TextColor="Coral"
+                               Text="{Binding Name}"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Header>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Excercise library"
+                       TextColor="MediumVioletRed"/>
+            </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Create excercise" Clicked="Create_Clicked"/>
+            </StackLayout>
+        </ListView.Footer>
+    </ListView>
+</ContentPage>

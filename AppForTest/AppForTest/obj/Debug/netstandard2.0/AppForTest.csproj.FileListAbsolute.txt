@@ -17,3 +17,5 @@ C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstanda
 C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstandard2.0\AppForTest.pdb
 C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstandard2.0\ref\AppForTest.dll
 C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstandard2.0\Views\PlayerPage.xaml.g.cs
+C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstandard2.0\Views\ExcerciseLibrary.xaml.g.cs
+C:\Users\jens_\source\repos\AppForTest\AppForTest\AppForTest\obj\Debug\netstandard2.0\Views\CreateExcercisePage.xaml.g.cs
