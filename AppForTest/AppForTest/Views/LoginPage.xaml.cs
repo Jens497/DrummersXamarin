@@ -1,5 +1,6 @@
 ﻿using AppForTest.Dto;
 using AppForTest.ViewModels;
+using AppForTest.PlayerHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace AppForTest.Views
     public partial class LoginPage : ContentPage
     {
         private readonly LoginViewModel loginViewModel;
+        //private Metronome playerHelpers;
         public LoginPage()
         {
             InitializeComponent();

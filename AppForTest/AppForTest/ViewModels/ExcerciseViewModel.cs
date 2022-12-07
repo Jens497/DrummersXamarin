@@ -33,6 +33,19 @@ namespace AppForTest.ViewModels
             await _service.DeleteExcercise(excerciseId);
         }
 
+        /*private bool _isBusy;
+        public bool IsBusy
+        {
+            get
+            {
+                return _isBusy;
+            }
+            set
+            {
+                _isBusy = value;
+                OnPropertyChanged("IsBusy");
+            }
+        }*/
         /*private bool _isRefreshing = false;
         public bool IsRefreshing
         {

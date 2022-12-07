@@ -17,8 +17,8 @@ namespace AppForTest.ViewModels
         {
             return new List<OnBoarding>
             {
-                new OnBoarding{Heading = "Heading one", Caption = "Caption one"},
-                new OnBoarding{Heading = "Heading two", Caption = "Caption two"},
+                new OnBoarding{Heading = "Metronome", Caption = "Control the beat you wanna play to. Easy to use metronome for the road!"},
+                new OnBoarding{Heading = "Excercise library", Caption = "Gain easy access to you pdfs with the different excercises you do throughout the week!"},
                 new OnBoarding{Heading = "Heading three", Caption = "Caption three"}
             };
         }

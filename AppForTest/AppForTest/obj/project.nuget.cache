@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A507P6/Nl+MtRiKUhX2I1zsHe/9isJUcnSc/21t9FMcLBQQ8yaoANMzVlYtplP7Z6ApcfCiw7h7C8JUM+FoeXg==",
+  "dgSpecHash": "YbzU1w/LPEzK2IwBjKZ3Ba5FgWHq4KviqkETQNA38HcU1hMC3hAe9uSUrcpHDX8iBzVPNKwRFish88e0GLUCHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jens_\\source\\repos\\AppForTest\\AppForTest\\AppForTest\\AppForTest.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\jens_\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\jens_\\.nuget\\packages\\xam.plugin.simpleaudioplayer\\1.6.0\\xam.plugin.simpleaudioplayer.1.6.0.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",

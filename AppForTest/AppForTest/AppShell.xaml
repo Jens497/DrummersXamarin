@@ -45,6 +45,7 @@
         <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
         <ShellContent Title="Home" Icon="icon_about.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
         <ShellContent Title="Player" Icon="icon_feed.png" Route="ExcerciseLibrary" ContentTemplate="{DataTemplate local:ExcerciseLibrary}"/>
+        <ShellContent Title="Metronome" Icon="icon_metronome.png" Route="MetronomePage" ContentTemplate="{DataTemplate local:MetronomePage}"/>
     </TabBar>
 
 </Shell>

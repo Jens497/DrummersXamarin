@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppForTest.Views.MetronomePage"
+             BackgroundColor="#021A35">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Grid ColumnDefinitions="1*, 1*" RowDefinitions="1*, Auto" Margin="0,0,0,40">
+                <Button 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Time signature" 
+                    Clicked="Time_signature_Clicked"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="ForestGreen"/>
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Subdivision"
+                    Clicked="Subdivision_Clicked"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="ForestGreen"/>
+            </Grid>
+            <Entry x:Name="EBpm" Placeholder="Enter bpm (60-250)" PlaceholderColor="Gray" TextColor="Gray"/>
+            <Grid ColumnDefinitions="1*, 1*" RowDefinitions="1*, Auto" Margin="0,60,0,0">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Play"
+                    Clicked="Play_Clicked"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="ForestGreen"/>
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Stop"
+                    Clicked="Stop_Clicked"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="ForestGreen"/>
+            </Grid>
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

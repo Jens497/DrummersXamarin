@@ -24,6 +24,7 @@ namespace AppForTest.Views
             _viewModel = new ExcerciseViewModel();
             _opener = new FileOpener();
 
+            //Not accurate MVVM but for some reason I just cant make it work by it takeing and items source from the ViewModel, even when I do it through a command
             ExcerciseList.RefreshCommand = new Command(() =>
             {
                 OnAppearing();

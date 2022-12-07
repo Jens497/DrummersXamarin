@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "obY1tN3zviORf9i0W6STzt8kDDS8ZRISvr/Cym4s+uR0YOgADSqTGqO1n5Zjfu7/DABfNsg32N03Wfap0kLXIA==",
+  "dgSpecHash": "Y+dpX+TTunzOC+wUTDjn5irWWuK5pmd6BzbZv0jnqb9xy3OKyOlqRuJTdRtDF3Wn7wz2OapQWE1t5LPeqNUHmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jens_\\source\\repos\\AppForTest\\AppForTest\\AppForTest.iOS\\AppForTest.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jens_\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\jens_\\.nuget\\packages\\xam.plugin.simpleaudioplayer\\1.6.0\\xam.plugin.simpleaudioplayer.1.6.0.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.5\\xamarin.communitytoolkit.2.0.5.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\jens_\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",

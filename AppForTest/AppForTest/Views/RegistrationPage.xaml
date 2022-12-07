@@ -8,12 +8,12 @@
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
             <Image Source="DrummerAppLogo.jpg" WidthRequest="200" HeightRequest="200"></Image>
-            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray"/>
-            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray"/>
-            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword" PlaceholderColor="Gray"/>
-            <Entry Placeholder="Email" x:Name="EEmail" PlaceholderColor="Gray"/>
-            <Entry Placeholder="First name" x:Name="EFirstname" PlaceholderColor="Gray"/>
-            <Entry Placeholder="Last name" x:Name="ELastname" PlaceholderColor="Gray"/>
+            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray" MaxLength="25"/>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray" MaxLength="30"/>
+            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword" PlaceholderColor="Gray" MaxLength="30"/>
+            <Entry Placeholder="Email" x:Name="EEmail" PlaceholderColor="Gray" MaxLength="45"/>
+            <Entry Placeholder="First name" x:Name="EFirstname" PlaceholderColor="Gray" MaxLength="40"/>
+            <Entry Placeholder="Last name" x:Name="ELastname" PlaceholderColor="Gray" MaxLength="40"/>
             <Button 
                 VerticalOptions="Center"
                 TextColor="White"
