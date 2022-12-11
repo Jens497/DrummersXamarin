@@ -10,6 +10,9 @@ namespace AppForTest
         public AppShell()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute(nameof(RegistrationPage), typeof(RegistrationPage));
+            Routing.RegisterRoute(nameof(CreateExcercisePage), typeof(CreateExcercisePage));
         }
 
     }

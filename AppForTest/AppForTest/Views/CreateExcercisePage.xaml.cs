@@ -1,18 +1,9 @@
 ﻿using AppForTest.Dto;
 using AppForTest.FileHelpers;
 using AppForTest.ViewModels;
-using Newtonsoft.Json.Converters;
-using Plugin.XamarinFormsSaveOpenPDFPackage;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 using static System.Net.WebRequestMethods;
 using File = System.IO.File;
@@ -60,22 +51,6 @@ namespace AppForTest.Views
 
             var file = await _fileOpener.PickFile();
             newFilePath = file.ToString();
-
-            /*try
-            {
-                var file = await FilePicker.PickAsync();
-
-                if (file == null)
-                    return;
-
-                
-                Labelinfo.Text = file.FullPath;
-                
-
-            } catch (Exception)
-            {
-
-            }*/
         }
 
         private async void Button_Clicked_2(object sender, EventArgs e)

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -41,9 +40,6 @@ namespace AppForTest.Services
 
             string responseString = await response.Content.ReadAsStringAsync();
             List<UserModel> users = JsonConvert.DeserializeObject<List<UserModel>>(responseString);
-            Console.WriteLine(users);
-            Console.WriteLine(users[0]);
-            Console.WriteLine(users[0].Username);
             return users;
         }
     }

@@ -1,9 +1,5 @@
 ﻿using AppForTest.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -47,9 +43,6 @@ namespace AppForTest.Views
                 await Application.Current.MainPage.DisplayAlert("Bpm invalid", "Please select a valid bpm between the ranges 60-250", "OK");
                 return;
             }
-            
-            //if (EBpm.Text == "")
-            //    await Application.Current.MainPage.DisplayAlert("Bpm not selected", "Please select a bmp for the metronome", "OK");
 
             _viewModel.SetupAndStartMetronome(bpmToSend);
             

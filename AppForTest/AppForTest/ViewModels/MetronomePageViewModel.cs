@@ -1,8 +1,4 @@
 ﻿using AppForTest.PlayerHelpers;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
 
 namespace AppForTest.ViewModels
 {

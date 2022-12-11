@@ -4,9 +4,6 @@ using AppForTest.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -47,7 +44,6 @@ namespace AppForTest.Views
         {
             ((ListView)sender).SelectedItem = null;
             var excercise = e.Item as ExcerciseModel;
-            Console.WriteLine(excercise.Id);
             //await _viewModel.DeleteExcercise(excercise.Id);
             var fileOpeningStatus = await _opener.OpenFile(excercise.Filename);
             if (!fileOpeningStatus)
@@ -57,7 +53,6 @@ namespace AppForTest.Views
         private async void MenuItem_Clicked(object sender, EventArgs e)
         {
             var excercise = ((MenuItem)sender).BindingContext as ExcerciseModel;
-            Console.WriteLine(excercise.Id);
             if (excercise == null)
                 return;
             await _viewModel.DeleteExcercise(excercise.Id);
@@ -67,7 +62,7 @@ namespace AppForTest.Views
 
         private async void Create_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(CreateExcercisePage)}");
+            await Shell.Current.GoToAsync($"{nameof(CreateExcercisePage)}");
         }
     }
 }

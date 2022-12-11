@@ -1,11 +1,6 @@
 ﻿using AppForTest.Dto;
 using AppForTest.ViewModels;
-using AppForTest.PlayerHelpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -37,8 +32,6 @@ namespace AppForTest.Views
                 await loginViewModel.LoginUser(userForAuth);
                 EUsername.Text = "";
                 EPassword.Text = "";
-
-                //await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
             }
         }
 

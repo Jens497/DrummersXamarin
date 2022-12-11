@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Shell.NavBarIsVisible="False"
              Shell.FlyoutItemIsVisible="False"
              x:Class="AppForTest.Views.RegistrationPage"
              BackgroundColor="#021A35">
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
             <Image Source="DrummerAppLogo.jpg" WidthRequest="200" HeightRequest="200"></Image>
-            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray" MaxLength="25"/>
-            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray" MaxLength="30"/>
-            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword" PlaceholderColor="Gray" MaxLength="30"/>
-            <Entry Placeholder="Email" x:Name="EEmail" PlaceholderColor="Gray" MaxLength="45"/>
-            <Entry Placeholder="First name" x:Name="EFirstname" PlaceholderColor="Gray" MaxLength="40"/>
-            <Entry Placeholder="Last name" x:Name="ELastname" PlaceholderColor="Gray" MaxLength="40"/>
+            <Entry Placeholder="Username" x:Name="EUsername" PlaceholderColor="Gray" MaxLength="25" TextColor="Gray"/>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="EPassword" PlaceholderColor="Gray" MaxLength="30" TextColor="Gray"/>
+            <Entry IsPassword="True" Placeholder="Repeat password" x:Name="ERepeatPassword" PlaceholderColor="Gray" MaxLength="30" TextColor="Gray"/>
+            <Entry Placeholder="Email" x:Name="EEmail" PlaceholderColor="Gray" MaxLength="45" TextColor="Gray"/>
+            <Entry Placeholder="First name" x:Name="EFirstname" PlaceholderColor="Gray" MaxLength="40" TextColor="Gray"/>
+            <Entry Placeholder="Last name" x:Name="ELastname" PlaceholderColor="Gray" MaxLength="40" TextColor="Gray"/>
             <Button 
                 VerticalOptions="Center"
                 TextColor="White"

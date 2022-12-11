@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 using System;
-using System.Runtime.InteropServices;
 using Newtonsoft.Json.Linq;
 using AppForTest.Dto;
 
@@ -58,12 +57,12 @@ namespace AppForTest.Services
             //In this case we get our token which verifies the user, and the user that has being used currently.
             string reponseContentFromJson = await response.Content.ReadAsStringAsync();
             var jsonConcent = JObject.Parse(reponseContentFromJson);
-            string userToken = jsonConcent["token"].ToString();
-            string userRegistered = jsonConcent["user"].ToString();
+            string userToken = jsonConcent["userToken"].ToString();
+            string userRegistered = jsonConcent["userRegistered"].ToString();
 
             return new ResponseFromAuthentication()
             {
-                AccessToken = userToken,
+                UserAccessToken = userToken,
                 UserName = userRegistered,
                 IsFailed = false,
             };
@@ -102,7 +101,7 @@ namespace AppForTest.Services
                 return new ResponseFromAuthentication()
                 {
                     IsFailed = true,
-                    ErrorMessage = "Unable to handle request, check everything!"
+                    ErrorMessage = "Request could not be handle, check connection."
                 };
             }
 
@@ -119,12 +118,12 @@ namespace AppForTest.Services
             //In this case we get our token which verifies the user, and the user that has being used currently.
             string reponseContentFromJson = await response.Content.ReadAsStringAsync();
             var jsonConcent = JObject.Parse(reponseContentFromJson);
-            string userToken = jsonConcent["token"].ToString();
+            string userToken = jsonConcent["userToken"].ToString();
             string userRegistered = jsonConcent["user"].ToString();
 
             return new ResponseFromAuthentication()
             {
-                AccessToken = userToken,
+                UserAccessToken = userToken,
                 UserName = userRegistered,
                 IsFailed = false,
             };

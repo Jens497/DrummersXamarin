@@ -3,11 +3,7 @@ using AppForTest.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using Xamarin.Forms;
 
 namespace AppForTest.ViewModels
 {
@@ -22,8 +18,6 @@ namespace AppForTest.ViewModels
             List<ExcerciseModel> excercises = await _service.GetExcercises();
             var excerciseConverted = new ObservableCollection<ExcerciseModel>(excercises);
             Excercises = excerciseConverted;
-            Console.WriteLine("Getting the excercises");
-            Console.WriteLine(Excercises.Count);
 
             return excercises;
         }
@@ -32,44 +26,6 @@ namespace AppForTest.ViewModels
         {
             await _service.DeleteExcercise(excerciseId);
         }
-
-        /*private bool _isBusy;
-        public bool IsBusy
-        {
-            get
-            {
-                return _isBusy;
-            }
-            set
-            {
-                _isBusy = value;
-                OnPropertyChanged("IsBusy");
-            }
-        }*/
-        /*private bool _isRefreshing = false;
-        public bool IsRefreshing
-        {
-            get { return _isRefreshing; }
-            set
-            {
-                _isRefreshing = value;
-            }
-        }
-
-        public ICommand RefreshCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    IsRefreshing = true;
-
-                    await RefreshData();
-
-                    IsRefreshing = false;
-                });
-            }
-        }*/
 
         public async Task RefreshData()
         {

@@ -1,10 +1,6 @@
 ﻿using AppForTest.Models;
 using AppForTest.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -42,8 +38,6 @@ namespace AppForTest.Views
                     Lastname = ELastname.Text,
                 };
                 await registrationViewModel.RegisterUser(user);
-                //The "//" creates a new route stack.
-                //await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
             }
             resetTextFields();
         }
